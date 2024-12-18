@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff8a65, #ff5722); /* Dégradé orange et rouge */
+            color: #333;
+        }
+        .menu-container {
+            text-align: center;
+            background: white;
+            padding: 25px 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            animation: fadeInScale 0.8s ease-in-out;
+        }
+        h1 {
+            font-size: 1.8rem;
+            color: #ff5722;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #ff5722;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ff8a65;
+            text-decoration: underline;
+        }
+        /* Animation */
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Menu Principal</h1>
+        <ul>
+            <li><a href="Fournisseurs.html">Fournisseurs</a></li>
+            <li><a href="client.html">Clients</a></li>
+            <li><a href="ModelesPlanches.html">Modèles de Planches</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+

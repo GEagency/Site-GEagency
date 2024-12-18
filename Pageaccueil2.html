@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue chez Garoulette</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff8c42, #ff3b3b);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Header Section */
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Button Links */
+        .button-container {
+            display: flex;
+            gap: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            background-color: #ff3333;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: #e62e2e;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px);
+        }
+
+        /* Footer Section */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffd1d1;
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue chez Garoulette</h1>
+    <div class="button-container">
+        <a href="identification-client.html">S'identifier Client</a>
+        <a href="identification-admin.html">S'identifier Administration</a>
+    </div>
+    <footer>
+        <p>
+            &copy; 2024 Garoulette. Tous droits réservés. <a href="Mentionslegales.html">Mentions légales</a>
+        </p>
+    </footer>
+</body>
+</html>

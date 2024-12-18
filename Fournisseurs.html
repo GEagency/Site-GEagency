@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Fournisseurs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff8a65, #ff4500); /* Dégradé orange et rose */
+            color: #333;
+        }
+        .form-container {
+            background: white;
+            padding: 25px 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 420px;
+            animation: fadeInScale 0.8s ease-in-out;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ff4500;
+        }
+        p {
+            margin: 15px 0;
+            font-size: 1rem;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-top: 5px;
+            border: 2px solid #ff4500;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        input[type="submit"] {
+            background: linear-gradient(135deg, #ff8a65, #ff4500);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        /* Animation */
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Ajouter un Fournisseur</h1>
+        <form method="GET" action="Fournisseurs.php">
+            <p>Numero du fournisseur
+                <input type="text" name="NumFournisseur" size="30">
+            </p>
+            <p>Numero de telephone
+                <input type="text" name="Tel">
+            </p>
+            <p>Nom du fournisseur
+                <input type="text" name="NomFournisseur" size="30">
+            </p>
+            <p>Adresse
+                <input type="text" name="Adresse" size="30">
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Envoyer">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
+
